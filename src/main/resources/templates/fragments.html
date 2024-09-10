@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<div id="menu" th:fragment="menu">
+  <a href="/main">Strona główna</a>
+  <a href="/contact">Kontakt</a>
+  <a href="/login" th:if="${session.isLogged == null}">Zaloguj</a>
+  <a href="/logout" th:if="${session.isLogged != null}">Wyloguj</a>
+</div>
+
+</html>
