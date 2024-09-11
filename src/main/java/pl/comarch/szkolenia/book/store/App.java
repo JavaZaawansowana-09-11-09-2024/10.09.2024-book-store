@@ -7,5 +7,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class App {
     public static void main(String[] args) {
         SpringApplication.run(App.class, args);
+
+        //https://www.erp.comarch.pl/Szkolenia/Ankiety/survey/CABZLG
+        //https://e-profesor.comarch.pl/zadania/course/view.php?id=171
     }
 }

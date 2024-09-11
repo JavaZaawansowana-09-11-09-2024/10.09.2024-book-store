@@ -1,4 +1,4 @@
-package pl.comarch.szkolenia.book.store.database.impl;
+package pl.comarch.szkolenia.book.store.database.impl.memory;
 
 import org.springframework.stereotype.Repository;
 import pl.comarch.szkolenia.book.store.database.IUserRepository;
@@ -8,7 +8,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
-@Repository
 public class UserRepository implements IUserRepository {
 
     private final List<User> users = new ArrayList<>();

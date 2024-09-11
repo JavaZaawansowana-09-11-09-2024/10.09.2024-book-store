@@ -1,5 +1,6 @@
 package pl.comarch.szkolenia.book.store.model;
 
+import jakarta.persistence.*;
 import lombok.*;
 
 @AllArgsConstructor
@@ -7,7 +8,10 @@ import lombok.*;
 @Getter
 @Setter
 @ToString
+@Entity(name = "tbook")
 public class Book {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     private String title;
     private String author;
